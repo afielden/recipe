@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe';
+
+  selectedCategory = 'recipe';
+
+
+  onNavigate(category: string) {
+    this.selectedCategory = category;
+  }
 }
